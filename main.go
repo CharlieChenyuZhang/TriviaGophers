@@ -40,7 +40,7 @@ func IndexHandler(w http.ResponseWriter, r *http.Request) {
 	r.ParseForm()
 	var teamName string
 	if(r.FormValue("teamName") == ""){
-		teamName = "endzymex" // FIXME: @bruce reset this to all
+		teamName = "endzymex" // FIXME: need to reset this to all - WIP
 	}else{
 		teamName = r.FormValue("teamName")
 	}
@@ -92,7 +92,6 @@ func SwtichTeamHandler(w http.ResponseWriter, r *http.Request) {
 	r.ParseForm()
 	teamName := r.FormValue("teamName")
 	fmt.Println("teamName", teamName)
-	//db.UpdatePlayers(winners)
 	http.Redirect(w, r, "/", http.StatusSeeOther)
 }
 
