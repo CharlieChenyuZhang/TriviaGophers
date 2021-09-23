@@ -1,0 +1,42 @@
+{{define "trivia"}}
+{{template "header" .}}
+{{template "nav" .}}
+
+<main class="jumbotron">
+  <div class="text-center p-5">
+    <h1>{{.Question}}</h1>
+    <form action="/trivia" method="get">
+    <select name="category" id="trivia-category">
+      <option value="general" {{if eq .Category "general"}}selected{{end}}>General</option>
+      <option value="science" {{if eq .Category "science"}}selected{{end}}>Science</option>
+      <option value="geography" {{if eq .Category "geography"}}selected{{end}}>Geography</option>
+      <option value="history" {{if eq .Category "history"}}selected{{end}}>History</option>
+    </select>
+    <input type="submit" value="Update Category">
+    </form>
+    <a type="button" href="/trivia">Get/Refresh Question</a>
+    <button type="button" onclick="toggleAnswer()">Toggle Answer</button>
+    <p class="lead" id="trivia-answer" style="display: none; background-color: #FFFF00;
+    margin: auto; width: fit-content;">{{.Answer}}</p>
+
+    <br><br>
+    <p>Click on name(s) of the winner(s)...</p>
+    <form action="/update" method="post">
+      {{range $k, $v := .Players.Players}}
+        <input type="checkbox" name="participant{{$k}}" value="{{$v.Name}}">
+        <label for="participant{{$k}}"> {{$v.Name}}</label><br>
+      {{end}}
+      <input type="submit" value="Update Leaderboard">
+    </form>
+  </div>
+</main>
+
+<script>
+  function toggleAnswer() {
+    var x = document.getElementById("trivia-answer");
+    x.style.display === "none" ? x.style.display = "block" :  x.style.display = "none";
+  }
+  </script>
+
+{{template "footer" .}}
+{{end}}

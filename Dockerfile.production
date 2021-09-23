@@ -1,0 +1,17 @@
+FROM golang:1.15.7-buster as builder
+ENV APP_HOME /go/src/triviagophers
+RUN mkdir -p $APP_HOME
+WORKDIR $APP_HOME
+COPY . .
+RUN go mod download
+RUN go mod verify
+RUN go build -o triviagophers
+FROM debian:buster
+FROM golang:1.15.7-buster
+ENV APP_HOME /go/src/triviagophers
+RUN mkdir -p $APP_HOME
+WORKDIR $APP_HOME
+COPY . .
+COPY --chown=0:0 --from=builder $APP_HOME/triviagophers $APP_HOME
+EXPOSE 8080
+CMD ["./triviagophers"]

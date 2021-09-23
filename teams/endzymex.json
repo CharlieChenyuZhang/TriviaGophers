@@ -1,0 +1,48 @@
+{
+    "players": [
+      {
+        "name": "Andre",
+        "score": 1
+      },
+      {
+        "name": "Angela",
+        "score": 0
+      },
+      {
+        "name": "Bhaskar",
+        "score":1
+      },
+      {
+        "name": "Charlie",
+        "score": 1
+      },
+      {
+        "name": "Lisa",
+        "score": 1
+      },
+      {
+        "name": "Pranab",
+        "score": 0
+      },
+      {
+        "name": "Priyanka",
+        "score": 5
+      },
+      {
+        "name": "Thomas",
+        "score": 1
+      },
+      {
+        "name": "Ranvir",
+        "score": 1
+      },
+      {
+        "name": "Denise",
+        "score": 0
+      },
+      {
+        "name": "Ashok",
+        "score": 1
+      }
+    ]
+  }

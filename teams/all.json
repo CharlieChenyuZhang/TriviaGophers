@@ -1,0 +1,72 @@
+{
+  "players": [
+    {
+      "name": "Andre",
+      "score": 5
+    },
+    {
+      "name": "Angela",
+      "score": 2
+    },
+    {
+      "name": "Bhaskar",
+      "score": 1
+    },
+    {
+      "name": "Charlie",
+      "score": 2
+    },
+    {
+      "name": "Lisa",
+      "score": 3
+    },
+    {
+      "name": "Pranab",
+      "score": 4
+    },
+    {
+      "name": "Priyanka",
+      "score": 11
+    },
+    {
+      "name": "Thomas",
+      "score": 1
+    },
+    {
+      "name": "Ranvir",
+      "score": 4
+    },
+    {
+      "name": "Denise",
+      "score": 2
+    },
+    {
+      "name": "Ashok",
+      "score": 6
+    },
+    {
+      "name": "Ankit",
+      "score": 5
+    },
+    {
+      "name": "Canxiu",
+      "score": 2
+    },
+    {
+      "name": "Sam",
+      "score": 1
+    },
+    {
+      "name": "Bruce",
+      "score": 2
+    },
+    {
+      "name": "Morene",
+      "score": 4
+    },
+    {
+      "name": "Gowri",
+      "score": 11
+    }
+  ]
+}

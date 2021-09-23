@@ -1,0 +1,10 @@
+.modification-table {
+  border-style: solid;
+  border-width: 3px;
+  border-color: coral;
+}
+
+.delete-confirmation {
+  background-color: #64abf3;
+  width: fit-content;
+}

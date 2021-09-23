@@ -1,0 +1,70 @@
+{{define "admin"}}
+{{template "header" .}}
+{{template "nav" .}}
+
+<body>
+<link rel="stylesheet" href="/static/css/admin.css" />
+<main class="jumbotron">
+    <span>group:</span>
+    <button>Create New</button>
+    <button>ENDzymeX</button>
+    <button>CyberJedi</button>
+    <button>Netfix</button>
+    <button>Hulk</button>
+
+    <br><br>
+    <span>name:</span>
+    <span>EndzymeX</span>
+
+    <br><br>
+    <span>Actions:</span>
+    <button>Update</button>
+    <button>Delete</button>
+
+    <br><br>
+    
+    <table class="modification-table">
+    <tr>
+      <th>name</th>
+      <th>score</th>
+      <th>action</th>
+    </tr>
+    <tr>
+      <td><input type="text" id="" name=""></td>
+      <td><input type="text" id="" name=""></td>
+      <td>➕</td>
+    </tr>
+
+    <tr>
+        <td><input type="text" id="" name="" value="IronMan"></td>
+        <td><input type="text" id="" name="" value="3000"></td>
+        <td>🗑️</td>
+    </tr>
+
+    <tr>
+        <td><input type="text" id="" name="" value="Charlie"></td>
+        <td><input type="text" id="" name="" value="3001"></td>
+        <td>🗑️</td>
+    </tr>
+
+    <tr>
+        <td>
+            <button>update names/scores</button>
+        </td>
+    </tr>
+  </table>
+
+
+    <br><br>
+    <div class="delete-confirmation">
+        <span>Are you sure you want to delete EndzymeX?</span>
+        <button>YES</button>
+        <button>NO</button>
+    </div>
+
+</main>
+
+</body>
+
+{{template "footer" .}}
+{{ end }}

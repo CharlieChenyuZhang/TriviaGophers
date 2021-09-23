@@ -1,0 +1,40 @@
+{
+  "players": [
+    {
+      "name": "Ankit",
+      "score": 5
+    },
+    {
+      "name": "Canxiu",
+      "score": 2
+    },
+    {
+      "name": "Sam",
+      "score": 1
+    },
+    {
+      "name": "Bruce",
+      "score": 2
+    },
+    {
+      "name": "Lisa",
+      "score": 3
+    },
+    {
+      "name": "Morene",
+      "score": 4
+    },
+    {
+      "name": "Gowri",
+      "score": 11
+    },
+    {
+      "name": "Ranvir",
+      "score": 4
+    },
+    {
+      "name": "Ashok",
+      "score": 6
+    }
+  ]
+}

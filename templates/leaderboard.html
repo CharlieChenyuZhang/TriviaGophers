@@ -1,0 +1,31 @@
+{{define "leadersboard"}}
+{{template "header" .}}
+<body class="text-center">
+    <link rel="stylesheet" href="/static/css/leaderboard.css" />
+    <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+
+    {{template "nav" .}}
+    <main role="main">
+        <h1>{{.Title}}</h1>
+        <p class="lead">{{.Body}}</p>
+        <a href="/reset">reset scores</a>
+        <!-- FIXME: @bruce we commented this out so that we could use this in ENDzymeX for now -->
+        <!-- <form action="/" method="post">
+            <select name="teamName" id="teamName" onchange="this.form.submit()">
+                {{range $k, $v := .Teams}}
+                    <option value="{{$v}}">{{$v}}</option>
+                {{end}}
+            </select>
+        </form> -->
+        <p class="lead"></p>
+        {{range $k, $v := .Players.Players}}
+            <p value="{{$k}}" >{{$v.Name}} - {{$v.Score}} <span class="score-icon">🌰</span></p>
+        {{end}}
+    </main>
+
+</div>
+
+</body>
+
+{{template "footer" .}}
+{{end}}

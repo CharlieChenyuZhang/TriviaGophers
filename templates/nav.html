@@ -1,0 +1,23 @@
+{{ define "nav"}}
+
+<header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="navbar-brand" href="/">Trivia Gophers  </div>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class='nav-item {{if (eq .Title "Leaders Board")}}active{{end}}'>
+          <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class='nav-item {{if (eq .Title "Trivia page")}}active{{end}}'>
+          <a class="nav-link" href="/trivia">Get Question</a>
+        </li>
+        <li class='nav-item {{if (eq .Title "Admin page")}}active{{end}}'>
+          <a class="nav-link" href="/admin">Admin</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+{{ end }}
+
