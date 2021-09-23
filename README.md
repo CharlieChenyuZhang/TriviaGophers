@@ -1,4 +1,13 @@
-APM template
+# features
+## you can see the ranking in the leaderboard
+![Leaderboard](images/leaderboard.png)
+
+## trivia page that displays the question
+![Question Page](images/question_page.png)
+
+## admin page to control the team player  [Work In Progress]
+![Admin Portal](images/admin_portal.png)
+
 
 # preliminary requirement
 Have GoLang installed https://golang.org/dl/
