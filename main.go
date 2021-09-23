@@ -63,7 +63,7 @@ func IndexHandler(w http.ResponseWriter, r *http.Request) {
             fmt.Println(strings.TrimSuffix(item.Name(), ".json"))
         }
     }
-	page := &sharedtypes.Data{Title: "Leaders Board", Body: "Welcome to H&D Trivia Game", Players: players,Teams:teams}
+	page := &sharedtypes.Data{Title: "Leaders Board", Body: "Welcome to the Trivia Game", Players: players,Teams:teams}
 
 	renderTemplate(w, "leadersboard", page)
 }
