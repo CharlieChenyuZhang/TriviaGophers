@@ -1,5 +1,8 @@
 APM template
 
+# preliminary requirement
+Have GoLang installed https://golang.org/dl/
+
 # commonly used command
 * `go run . ` or `go run main.go` to run the app 
 * `go build <file_you_want_to_build>.go` to build the file, then `./<file_you_built>` to tun the go program directly
